@@ -1,8 +1,8 @@
-package observer.subjectEntity;
+package observerPattern.subjectEntity;
 
-import observer.Entity.WeatherEntity;
-import observer.observerInterface.Observer;
-import observer.subjectInterface.Subject;
+import observerPattern.Entity.WeatherEntity;
+import observerPattern.observerInterface.Observer;
+import observerPattern.subjectInterface.Subject;
 
 import java.util.HashSet;
 import java.util.Set;

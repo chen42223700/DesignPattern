@@ -1,6 +1,6 @@
-package observer.subjectInterface;
+package observerPattern.subjectInterface;
 
-import observer.observerInterface.Observer;
+import observerPattern.observerInterface.Observer;
 
 /**
  * 主题

@@ -1,8 +1,8 @@
-package observer.observerEntity;
+package observerPattern.observerEntity;
 
-import observer.Entity.WeatherEntity;
-import observer.observerInterface.DisplayElement;
-import observer.observerInterface.Observer;
+import observerPattern.Entity.WeatherEntity;
+import observerPattern.observerInterface.DisplayElement;
+import observerPattern.observerInterface.Observer;
 
 /**
  * 显示当前天气状况的对象

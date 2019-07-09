@@ -1,10 +1,12 @@
-package observer.Entity;
+package observerPattern.subjectEntity;
 
-import java.io.Serializable;
+import java.util.Observable;
 
-public class WeatherEntity implements Serializable {
+/**
+ * 使用系统的观察者方法
+ */
+public class WeatherSubjectUseSys extends Observable {
 
-    private static final long serialVersionUID = 2912262552904364327L;
     /**
      * 温度
      */
@@ -44,16 +46,15 @@ public class WeatherEntity implements Serializable {
         this.pressure = pressure;
     }
 
-    public WeatherEntity(int temperature, int humidity, int pressure) {
+    public void pull(int temperature, int humidity, int pressure){
         this.temperature = temperature;
         this.humidity = humidity;
         this.pressure = pressure;
+        //setChange方法,只有changed是true时，才会通知观察者
+        this.setChanged();
+        //通知所有观察者主题更新了
+        //同时也提供了带参数的方法，提供传参功能
+        this.notifyObservers();
     }
 
-    @Override
-    public String toString() {
-        return  "temperature='" + temperature + '\'' +
-                ", humidity='" + humidity + '\'' +
-                ", pressure='" + pressure;
-    }
 }

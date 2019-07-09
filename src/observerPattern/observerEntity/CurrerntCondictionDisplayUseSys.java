@@ -1,7 +1,7 @@
-package observer.observerEntity;
+package observerPattern.observerEntity;
 
-import observer.observerInterface.DisplayElement;
-import observer.subjectEntity.WeatherSubjectUseSys;
+import observerPattern.observerInterface.DisplayElement;
+import observerPattern.subjectEntity.WeatherSubjectUseSys;
 
 import java.util.Observable;
 import java.util.Observer;
